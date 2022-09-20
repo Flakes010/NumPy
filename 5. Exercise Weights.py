@@ -10,10 +10,14 @@ dailywts = 185 - np.arange(5*7)/5
 #  182.6 182.4 182.2 182.  181.8 181.6 181.4 181.2 181.  180.8 180.6 180.4
 #  180.2 180.  179.8 179.6 179.4 179.2 179.  178.8 178.6 178.4 178.2]
 
+#Average Weight per weekend
 saturdays = dailywts[5:len(dailywts):7]
 sundays = dailywts[6:len(dailywts):7]
+weekend = (saturdays + sundays) / 2
+
+#Average Weight for the whole month
 weekends = np.stack([saturdays,sundays])
 weekends = weekends.reshape(10)
-avg_weight = weekends.sum() / len(weekends)
+avg_weight_per_month = weekends.sum() / len(weekends)
 
-print(avg_weight)
+print(weekends)
