@@ -24,6 +24,10 @@ locs = np.array([
     [6,3]
 ])
 
+
+
+
+#Solution
 first_column = locs[[0,1,2,3,4],[0]]
 second_column = locs[[0,1,2,3,4],[1]]
 my_gold = gold[first_column,second_column]
