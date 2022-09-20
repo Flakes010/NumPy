@@ -10,6 +10,10 @@ dailywts = 185 - np.arange(5*7)/5
 #  182.6 182.4 182.2 182.  181.8 181.6 181.4 181.2 181.  180.8 180.6 180.4
 #  180.2 180.  179.8 179.6 179.4 179.2 179.  178.8 178.6 178.4 178.2]
 
+
+
+
+#Solutions
 #Average Weight per weekend
 saturdays = dailywts[5:len(dailywts):7]
 sundays = dailywts[6:len(dailywts):7]
